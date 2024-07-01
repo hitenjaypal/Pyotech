@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.but {
+  background-color: #cc0000; /* Target's red */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default border */
+  padding: 8px 16px; /* Padding */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  margin: 0 5px;
+}
+
+.but:hover {
+  background-color: #b30000; /* Darker red on hover */
+}
+
+.but:active {
+  background-color: #990000; /* Even darker red when clicked */
+}
+
+.but:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(204, 0, 0, 0.5); /* Custom focus outline */
+}
+
+.card {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000
+}
+
+/* .card: General styling for elements with the class .card.
+
+
+display: none;: Hides the card by default.
+
+position: fixed;: Positions the card relative to the viewport.
+
+top: 50%; and left: 50%;: Places the card at the center of the viewport.
+
+transform: translate(-50%, -50%);: Offsets the card by half its width and height to center it exactly.
+
+background-color: #ffffff;: Sets a white background color.
+
+padding: 20px;: Adds padding inside the card.
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);: Adds a subtle shadow around the card for a raised effect.
+
+border-radius: 8px;: Rounds the corners of the card.
+
+z-index: 1000;: Ensures the card appears above other content.
+
+width: 300px;: Sets the width of the card to 300 pixels. */
